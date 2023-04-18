@@ -30,7 +30,7 @@
             <a href="#">
                 <i class="fa-solid fa-magnifying-glass"></i>
             </a>
-            <input type="text" name="ricerca" id="search-bar">
+            <input type="text" name="ricerca" id="search-bar" placeholder="Prova a cercare: Lezioni di Laravel">
         </form>
 
         <!-- icone versione desktop -->
@@ -42,7 +42,16 @@
 
         <!-- campana con dropdown -->
         <div class="drop_down">
-            <i class="fa-solid fa-bell"></i>
+            <div class="btn-group">
+                <button type="button" class="btn" data-bs-toggle="dropdown" aria-expanded="false">
+                    <i class="fa-solid fa-bell"></i>
+                </button>
+                <ul class="dropdown-menu dropdown-menu-end">
+                  <li><button class="dropdown-item" type="button">Profilo</button></li>
+                  <li><button class="dropdown-item" type="button">Fatturazione</button></li>
+                  <li><button class="dropdown-item" type="button">Logout</button></li>
+                </ul>
+            </div>
         </div>
     </header>
 
@@ -88,8 +97,8 @@
             </section>
 
             <!-- sezione -->
-            <section id="dash_board">
-                <div class="row p-2">
+            <section id="dash_board" class="container-fluid">
+                <div class="row">
                     <div class="col-12 col-lg-8">
                         <!-- sezione prossime classi -->
                         <div class="col">
@@ -103,22 +112,163 @@
                                 <table class="table">
                                     <tbody>
                                         <tr>
-                                        <td scope="row" class="first">1</td>
-                                        <td>Mark</td>
-                                        <td>Otto</td>
-                                        <td>@mdo</td>
+                                            <th scope="row" class="first">Nome</th>
+                                            <th class="d-mobile">Data Inizio</th>
+                                            <th class="d-mobile">ROI</th>
+                                            <th>Stato</th>
+                                            <th>Azioni</th>
                                         </tr>
                                         <tr>
-                                        <td scope="row" class="first">2</td>
-                                        <td>Jacob</td>
-                                        <td>tdornton</td>
-                                        <td>@fat</td>
+                                            <td scope="row" class="first">
+                                                <i class="fa-solid fa-code"></i>
+                                                Classe 75
+                                            </td>
+                                            <td class="d-mobile">15 Febbraio 2021</td>
+                                            <td class="d-mobile">20%</td>
+                                            <td>
+                                                <span class="badge text-bg-success">Done</span>
+                                            </td>
+                                            <td>
+                                                <button type="button" class="btn btn-outline-secondary">
+                                                    <i class="fa-solid fa-pen"></i>
+                                                </button>
+                                                <button type="button" class="btn btn-outline-secondary">
+                                                    <i class="fa-solid fa-trash"></i>
+                                                </button>
+                                            </td>
                                         </tr>
                                         <tr>
-                                        <td scope="row" class="first">3</td>
-                                        <td>Larry the Bird</td>
-                                        <td>@twitter</td>
-                                        <td>@twitter</td>
+                                            <td scope="row" class="first">
+                                                <i class="fa-solid fa-code"></i>
+                                                Classe 76
+                                            </td>
+                                            <td class="d-mobile">16 Febbraio 2021</td>
+                                            <td class="d-mobile">20%</td>
+                                            <td>
+                                                <span class="badge text-bg-success">Done</span>
+                                            </td>
+                                            <td>
+                                                <button type="button" class="btn btn-outline-secondary">
+                                                    <i class="fa-solid fa-pen"></i>
+                                                </button>
+                                                <button type="button" class="btn btn-outline-secondary">
+                                                    <i class="fa-solid fa-trash"></i>
+                                                </button>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td scope="row" class="first">
+                                                <i class="fa-solid fa-code"></i>
+                                                Classe 77
+                                            </td>
+                                            <td class="d-mobile">17 Febbraio 2021</td>
+                                            <td class="d-mobile">20%</td>
+                                            <td>
+                                                <span class="badge text-bg-warning text-light">process</span>
+                                            </td>
+                                            <td>
+                                                <button type="button" class="btn btn-outline-secondary">
+                                                    <i class="fa-solid fa-pen"></i>
+                                                </button>
+                                                <button type="button" class="btn btn-outline-secondary">
+                                                    <i class="fa-solid fa-trash"></i>
+                                                </button>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td scope="row" class="first">
+                                                <i class="fa-solid fa-code"></i>
+                                                Classe 78
+                                            </td>
+                                            <td class="d-mobile">18 Febbraio 2021</td>
+                                            <td class="d-mobile">20%</td>
+                                            <td>
+                                                <span class="badge text-bg-success">Done</span>
+                                            </td>
+                                            <td>
+                                                <button type="button" class="btn btn-outline-secondary">
+                                                    <i class="fa-solid fa-pen"></i>
+                                                </button>
+                                                <button type="button" class="btn btn-outline-secondary">
+                                                    <i class="fa-solid fa-trash"></i>
+                                                </button>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td scope="row" class="first">
+                                                <i class="fa-solid fa-code"></i>
+                                                Classe 79
+                                            </td>
+                                            <td class="d-mobile">19 Febbraio 2021</td>
+                                            <td class="d-mobile">20%</td>
+                                            <td>
+                                                <span class="badge text-bg-danger">failed</span>
+                                            </td>
+                                            <td>
+                                                <button type="button" class="btn btn-outline-secondary">
+                                                    <i class="fa-solid fa-pen"></i>
+                                                </button>
+                                                <button type="button" class="btn btn-outline-secondary">
+                                                    <i class="fa-solid fa-trash"></i>
+                                                </button>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td scope="row" class="first">
+                                                <i class="fa-solid fa-code"></i>
+                                                Classe 80
+                                            </td>
+                                            <td class="d-mobile">20 Febbraio 2021</td>
+                                            <td class="d-mobile">20%</td>
+                                            <td>
+                                                <span class="badge text-bg-success">Done</span>
+                                            </td>
+                                            <td>
+                                                <button type="button" class="btn btn-outline-secondary">
+                                                    <i class="fa-solid fa-pen"></i>
+                                                </button>
+                                                <button type="button" class="btn btn-outline-secondary">
+                                                    <i class="fa-solid fa-trash"></i>
+                                                </button>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td scope="row" class="first">
+                                                <i class="fa-solid fa-code"></i>
+                                                Classe 81
+                                            </td>
+                                            <td class="d-mobile">21 Febbraio 2021</td>
+                                            <td class="d-mobile">20%</td>
+                                            <td>
+                                                <span class="badge text-bg-danger">failed</span>
+                                            </td>
+                                            <td>
+                                                <button type="button" class="btn btn-outline-secondary">
+                                                    <i class="fa-solid fa-pen"></i>
+                                                </button>
+                                                <button type="button" class="btn btn-outline-secondary">
+                                                    <i class="fa-solid fa-trash"></i>
+                                                </button>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td scope="row" class="first">
+                                                <i class="fa-solid fa-code"></i>
+                                                Classe 82
+                                            </td>
+                                            <td class="d-mobile">22 Febbraio 2021</td>
+                                            <td class="d-mobile">20%</td>
+                                            <td>
+                                                <span class="badge text-bg-success">Done</span>
+                                            </td>
+                                            <td>
+                                                <button type="button" class="btn btn-outline-secondary">
+                                                    <i class="fa-solid fa-pen"></i>
+                                                </button>
+                                                <button type="button" class="btn btn-outline-secondary">
+                                                    <i class="fa-solid fa-trash"></i>
+                                                </button>
+                                            </td>
                                         </tr>
                                     </tbody>
                                     </table>
@@ -131,6 +281,47 @@
                                     <h4>F.A.Q.</h4>
                                 </div>
                                 
+                                <!-- DROPDOWN BS -->
+                                <div class="dropdown">
+                                    <button class="btn dropdown-toggle d-flex justify-content-between align-items-center" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                        Come aggiungere un nuovo studente?
+                                    </button>
+                                    <ul id="down" class="dropdown-menu">
+                                        <li>
+                                            <a class="dropdown-item" href="#">
+                                                Clicca sul + in alto nella sezione blu.
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+
+                                <!-- DROPDOWN BS -->
+                                <div class="dropdown">
+                                    <button class="btn dropdown-toggle d-flex justify-content-between align-items-center" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                        Come posso accedere alle informazioni del mio account?
+                                    </button>
+                                    <ul id="down" class="dropdown-menu">
+                                        <li>
+                                            <a class="dropdown-item" href="#">
+                                                Clicca sull'icona della campanella.
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+
+                                <!-- DROPDOWN BS -->
+                                <div class="dropdown">
+                                    <button class="btn dropdown-toggle d-flex justify-content-between align-items-center" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                        Posso usare questa dashobard da mobile?
+                                    </button>
+                                    <ul id="down" class="dropdown-menu">
+                                        <li>
+                                            <a class="dropdown-item" href="#">
+                                                Certo che si!
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
                             </div>
                         </div>
                     </div>

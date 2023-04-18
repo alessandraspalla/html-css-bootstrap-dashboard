@@ -45,6 +45,14 @@ form a {
     margin-inline: 12px;
 }
 
+.fa-bell {
+    color: #ff9002;
+}
+
+.btn-check:checked + .btn, .btn.active, .btn.show, .btn:first-child:active, :not(.btn-check) + .btn:active {
+    border: hidden;
+}
+
 /* header versione tablet */
 @media screen and (max-width:768px) {
     #logo {
@@ -100,6 +108,7 @@ main {
     width: calc(100% - 150px);
     height: 100%;
     overflow: auto;
+    font-size: .8rem;
 }
 
 
@@ -124,17 +133,71 @@ main {
     border: 1px solid #999;
     border-radius: 5px;
     min-height: 200px;
-    margin-bottom: 15px;
+    margin: 15px 0;
 }
 
 .title {
     padding: 8px;
     border-bottom: 1px solid #999;
+    background-color: #f7f7f7;
 }
 
 /* regole tabella primo item */
+.first i {
+    text-align: center;
+    color: #fff;
+    background-color: #f16450;
+    border-radius: 50%;
+    width: 25px;
+    height: 25px;
+    line-height: 25px;
+    vertical-align: middle;
+}
+.btn {
+    padding: .15rem .4rem;
+}
+
 .first {
-    width: 60%;
+    width: 40%;
+    text-align: left;
+}
+
+td,th {
+    text-align: center;
+}
+
+/* versione tablet */
+@media screen and (max-width:768px) {
+    .first {
+        width: 30%;
+    }
+}
+
+/* versione mobile */
+@media screen and (max-width:576px) {
+    .d-mobile {
+        display: none;
+    }
+}
+
+/* regole FAQ dropdow */
+.dropdown {
+    padding: 10px;
+}
+
+.dropdown .btn {
+    width: 100%;
+    border-bottom: 1px solid #999;
+    border-radius: 0;
+    padding-bottom: 10px;
+}
+
+#down {
+    width: calc(100% - 20px);
+    border: hidden;
+    border-bottom: 1px solid #999;
+    border-radius: 0;
+    margin: 10px;
 }
 
 /* DEBUG */
