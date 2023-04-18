@@ -71,7 +71,28 @@ form a {
 aside {
     width: 150px;
     height: 100%;
-    background-color: darkblue;
+    background-color: #051e34;
+    color: #fff;
+}
+
+aside i {
+    color: #fff;
+}
+
+nav {
+    flex-grow: 1;
+}
+
+h6 {
+    margin-top: 0.2rem;
+    margin-bottom: 0.3rem;
+}
+
+/* versione tablet e mobile */
+@media screen and (max-width:768px) {
+    aside .col-5 {
+        display: none;
+    }
 }
 
 /* regole main */
@@ -98,3 +119,4 @@ main {
 main {
     background-color: lightgreen;
 }
+
