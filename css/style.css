@@ -2,9 +2,63 @@
     font-family: 'Roboto', sans-serif;
 }
 
+a {
+    text-decoration: none;
+}
+
+img {
+    width: 100%;
+}
+
 /* regole header */
 header {
     height: 50px;
+}
+
+#logo {
+    margin: 0 10px;
+}
+
+#logo-small {
+    display: none;
+}
+
+form {
+    flex-grow: 1;
+    background-color: #e5e5e5;
+    margin-inline: 10px;
+    border-radius: 7px;
+}
+
+form a {
+    color: #000;
+    margin-inline: 7px;
+}
+
+#search-bar {
+    border: hidden;
+    background-color: #e5e5e5;
+    width: calc(100% - 40px)
+}
+
+.icon i, .drop_down {
+    margin-inline: 12px;
+}
+
+/* header versione tablet */
+@media screen and (max-width:768px) {
+    #logo {
+        display: none;
+    }
+
+    #logo-small {
+        display: block;
+        width: 60px;
+    }
+
+    .icon {
+        display: none;
+    }
 }
 
 /* regole inferior */
@@ -15,22 +69,32 @@ header {
 
 /* regole aside */
 aside {
-    width: 120px;
+    width: 150px;
     height: 100%;
     background-color: darkblue;
 }
 
 /* regole main */
 main {
-    width: calc(100% - 120px);
+    width: calc(100% - 150px);
     height: 100%;
-    background-color: lightgreen;
     overflow: auto;
 }
 
 
+/* main versione tablet con aside che si restringe */
+@media screen and (max-width:768px) {
+    aside {
+        width: 60px;
+    }
+
+    main {
+        width: calc(100% - 60px);
+    }
+}
 
 /* DEBUG */
-header {
-    background-color: aquamarine;
+
+main {
+    background-color: lightgreen;
 }
