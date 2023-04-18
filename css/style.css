@@ -114,9 +114,27 @@ main {
     }
 }
 
-/* DEBUG */
-
-main {
-    background-color: lightgreen;
+/* regole sezione bread-crumb */
+#bread_crumb{
+    background-color: #1b72e8;
 }
 
+/* regole item */
+.item {
+    border: 1px solid #999;
+    border-radius: 5px;
+    min-height: 200px;
+    margin-bottom: 15px;
+}
+
+.title {
+    padding: 8px;
+    border-bottom: 1px solid #999;
+}
+
+
+/* DEBUG */
+
+#bread_crumb{
+    min-height: 80px;
+}
