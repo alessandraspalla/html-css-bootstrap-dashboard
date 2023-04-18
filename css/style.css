@@ -132,6 +132,10 @@ main {
     border-bottom: 1px solid #999;
 }
 
+/* regole tabella primo item */
+.first {
+    width: 60%;
+}
 
 /* DEBUG */
 
