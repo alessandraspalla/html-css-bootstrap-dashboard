@@ -28,6 +28,7 @@ header form {
     background-color: #e5e5e5;
     margin-inline: 10px;
     border-radius: 7px;
+    padding: 3px;
 }
 
 form a {
