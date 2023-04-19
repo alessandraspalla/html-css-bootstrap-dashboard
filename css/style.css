@@ -126,12 +126,70 @@ main {
 /* regole sezione bread-crumb */
 #bread_crumb{
     background-color: #1b72e8;
+    min-height: 80px;
+}
+
+h3 {
+    display: inline-block;
+    margin-bottom: 0;
+    line-height: 2rem;
+    vertical-align: bottom;
+}
+
+#bread_crumb .btn {
+    padding: 2px 4px;
+    border-radius: 20px;
+    background-color: rgba(0, 0, 0, .25);
+    font-size: 0.65rem;
+}
+
+.d-tablet {
+    display: inline-block;
+}
+
+.d-large {
+    display: none;
+}
+
+/* regole offcanvas */
+#canvas.btn {
+    font-size: 1.2rem;
+    height: 35px;
+    width: 35px;
+    border-radius: 10px;
+    background-color: rgba(0, 0, 0, 0);
+}
+
+#canvas.btn:hover {
+    color: #fff;
+}
+
+.offcanvas.offcanvas-end  {
+    width: 50%;
+}
+
+/* versione tablet */
+@media screen and (max-width:991px) {
+    .d-tablet {
+        display: none;
+    }
+
+    .d-large {
+        display: inline-block;
+    }
+}
+
+/* versione small */
+@media screen and (max-width:576px) {
+    #change-order {
+        order: -1;
+    }
 }
 
 /* regole item */
 .item {
     border: 1px solid #999;
-    border-radius: 5px;
+    border-radius: 8px;
 }
 
 .item.margin{
@@ -209,7 +267,3 @@ td,th {
 }
 
 /* DEBUG */
-
-#bread_crumb{
-    min-height: 80px;
-}

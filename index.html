@@ -93,7 +93,138 @@
         <main>
             <!-- sezione -->
             <section id="bread_crumb">
+                <div class="container-fluid">
+                    <!-- riga -->
+                    <div class="row row-cols-1 row-cols-sm-3">
 
+                        <div class="col col-lg-6">
+                            <div class="p-2">
+                                <h3 class="text-light">Boolean</h3>
+                                <button type="button" class="btn text-light btn-sm">Piano blaze</button>
+                                
+                                <div class="mt-1">
+                                    <button type="button" class="btn text-light btn-sm">3 app</button>
+                                    <i class="fa-solid fa-angles-right"></i>
+                                    <div class="d-tablet">
+                                        <button type="button" class="btn text-light btn-sm">Boolean mobile app</button>
+                                        <button type="button" class="btn text-light btn-sm">Boolean web app</button>
+                                        <button type="button" class="btn text-light btn-sm">Boolean blog app</button>
+                                    </div>
+                                    <div class="d-large">
+                                        <button type="button" class="btn text-light btn-sm">+</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col col-lg-3">
+                            <div class="p-2 text-light">
+                                <span>Studenti online negli ultimi 30 minuti</span>
+                                <br>
+                                <h3>125</h3>
+                            </div>
+                        </div>
+                        
+                        <div id="change-order" class="col col-lg-3">
+                            <div class="p-3 text-light">
+                                Nuovo Studente 
+
+                                <!-- OFFCANVAS BS -->
+                                <button id="canvas" class="btn btn-outline-light" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">+</button>
+
+                                <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+                                <div class="offcanvas-header">
+                                    <h6 class="offcanvas-title" id="offcanvasRightLabel">Inserisci un nuovo studente</h6>
+                                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                                </div>
+                                <div class="offcanvas-body">
+                                    <!-- FORM ISCRIZIONE BS -->
+                                    <form class="row g-3">
+
+                                        <!-- nome -->
+                                        <div class="col-md-6">
+                                            <label for="inputName4" class="form-label">Nome</label>
+                                            <input type="email" class="form-control" id="inputEmail4">
+                                        </div>
+
+                                        <!-- cognome -->
+                                        <div class="col-md-6">
+                                            <label for="inputSurname4" class="form-label">Cognome</label>
+                                            <input type="password" class="form-control" id="inputPassword4">
+                                        </div>
+                                        
+                                        <!-- email -->
+                                        <div class="col-md-6">
+                                            <label for="inputEmail4" class="form-label">Email</label>
+                                            <div class="input-group flex-nowrap">
+                                                <span class="input-group-text" id="addon-wrapping">@</span>
+                                                <input type="text" id="inputEmail4" class="form-control" aria-label="Username" aria-describedby="addon-wrapping">
+                                            </div>
+                                        </div>
+
+                                        <!-- password -->
+                                        <div class="col-md-6">
+                                          <label for="inputPassword4" class="form-label">Password</label>
+                                          <input type="password" class="form-control" id="inputPassword4">
+                                        </div>
+
+                                        <!-- indirizzo -->
+                                        <div class="col-12">
+                                          <label for="inputAddress" class="form-label">Indirizzo</label>
+                                          <input type="text" class="form-control" id="inputAddress">
+                                        </div>
+                                        
+                                        <!-- Città -->
+                                        <div class="col-md-6">
+                                          <label for="inputCity" class="form-label">Città</label>
+                                          <input type="text" class="form-control" id="inputCity">
+                                        </div>
+
+                                        <!-- Stato -->
+                                        <div class="col-md-4">
+                                          <label for="inputState" class="form-label">Stato</label>
+                                          <select id="inputState" class="form-select">
+                                            <option selected>Scegli..</option>
+                                            <option>...</option>
+                                          </select>
+                                        </div>
+
+                                        <!-- CAP -->
+                                        <div class="col-md-2">
+                                          <label for="inputZip" class="form-label">Cap</label>
+                                          <input type="text" class="form-control" id="inputZip">
+                                        </div>
+
+                                        <!-- foto -->
+                                        <div class="col-12">
+                                            <div class="mb-3">
+                                                <label for="formFile" class="form-label">Default file input example</label>
+                                                <input class="form-control" type="file" id="formFile">
+                                            </div>
+                                        </div>
+                                          
+
+                                        <!-- checkbox -->
+                                        <div class="col-12">
+                                          <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" id="gridCheck">
+                                            <label class="form-check-label" for="gridCheck">
+                                              Check me out
+                                            </label>
+                                          </div>
+                                        </div>
+
+                                        <!-- submit -->
+                                        <div class="col-12">
+                                          <button type="submit" class="btn btn-primary">Sign in</button>
+                                        </div>
+                                      </form>
+                                </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </section>
 
             <!-- sezione -->
