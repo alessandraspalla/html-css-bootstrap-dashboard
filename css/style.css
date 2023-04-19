@@ -81,6 +81,7 @@ aside {
     height: 100%;
     background-color: #051e34;
     color: #fff;
+    background-image: url(../img/sidebar-bg.png);
 }
 
 aside i {
@@ -91,15 +92,27 @@ nav {
     flex-grow: 1;
 }
 
-h6 {
-    margin-top: 0.2rem;
-    margin-bottom: 0.3rem;
+.fa-chart-simple {
+    margin-right: 4px;
+}
+
+.fa-signal {
+    margin-left: 8px;
+}
+
+nav a, .setting a {
+    display: inline-block;
+    padding: 5px;
 }
 
 /* versione tablet e mobile */
 @media screen and (max-width:768px) {
-    aside .col-5 {
+    .d_none {
         display: none;
+    }
+
+    .fa-signal {
+        margin: 0;
     }
 }
 
@@ -273,4 +286,16 @@ td,th {
     border-bottom: 1px solid #999;
 }
 
-/* DEBUG */
+/* regole sezione con grafico */
+.underline {
+    text-decoration: underline;
+}
+
+/* stati hover */
+tr:hover {
+    background-color: #e5e5e5;
+}
+
+nav a:hover, .setting a:hover {
+    background-color: #6c757d;
+}

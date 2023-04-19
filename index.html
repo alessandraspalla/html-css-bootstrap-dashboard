@@ -62,28 +62,36 @@
         <aside class="d-flex flex-column py-3">
             <!-- sezione navigazione -->
             <nav>
-                <div class="row justify-content-center">
-                    <div class="col-2 p-0">
-                        <i class="fa-solid fa-house"></i>
-                        <i class="fa-solid fa-chart-simple"></i>
-                        <i class="fa-solid fa-signal"></i>
+                <div class="row">
+                    <div class="col text-center">
+                        <a href="#">
+                            <i class="fa-solid fa-house"></i>
+                            <span class="text-light d_none">Home</span>
+                        </a>
+                        <br>
+                        <a href="#">
+                            <i class="fa-solid fa-chart-simple"></i>
+                            <span class="text-light d_none">Stats</span>
+                        </a>
+                        <br>
+                        <a href="#">
+                            <i class="fa-solid fa-signal"></i>
+                            <span class="text-light d_none">Signals</span>
+                        </a>
+                        
                     </div>
-                    <div class="col-5 p-0">
-                        <h6>Home</h6>
-                        <h6>Stats</h6>
-                        <h6>Signals</h6>
-                    </div>
+                    
                 </div>
             </nav>
 
             <!-- impostazioni -->
             <div class="setting">
                 <div class="row justify-content-center">
-                    <div class="col-2 p-0">
-                        <i class="fa-solid fa-gear"></i>
-                    </div>
-                    <div class="col-5 p-0">
-                        <h6>Admin</h6>
+                    <div class="col text-center">
+                        <a href="#">
+                            <i class="fa-solid fa-gear"></i>
+                            <span class="text-light d_none">Admin</span>
+                        </a> 
                     </div>
                 </div>
             </div>
@@ -144,13 +152,13 @@
                                         <!-- nome -->
                                         <div class="col-sm-6">
                                             <label for="inputName4" class="form-label">Nome</label>
-                                            <input type="email" class="form-control" id="inputEmail4">
+                                            <input type="text" class="form-control" id="inputName4">
                                         </div>
 
                                         <!-- cognome -->
                                         <div class="col-sm-6">
                                             <label for="inputSurname4" class="form-label">Cognome</label>
-                                            <input type="password" class="form-control" id="inputPassword4">
+                                            <input type="text" class="form-control" id="inputSurname4">
                                         </div>
                                         
                                         <!-- email -->
@@ -412,47 +420,45 @@
                                 <div class="title">
                                     <h4>F.A.Q.</h4>
                                 </div>
-                                
-                                <!-- DROPDOWN BS -->
-                                <div class="dropdown">
-                                    <button class="btn dropdown-toggle d-flex justify-content-between align-items-center" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                        Come aggiungere un nuovo studente?
-                                    </button>
-                                    <ul id="down" class="dropdown-menu">
-                                        <li>
-                                            <a class="dropdown-item" href="#">
-                                                Clicca sul + in alto nella sezione blu.
-                                            </a>
-                                        </li>
-                                    </ul>
-                                </div>
 
-                                <!-- DROPDOWN BS -->
-                                <div class="dropdown">
-                                    <button class="btn dropdown-toggle d-flex justify-content-between align-items-center" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                        Come posso accedere alle informazioni del mio account?
-                                    </button>
-                                    <ul id="down" class="dropdown-menu">
-                                        <li>
-                                            <a class="dropdown-item" href="#">
-                                                Clicca sull'icona della campanella.
-                                            </a>
-                                        </li>
-                                    </ul>
-                                </div>
-
-                                <!-- DROPDOWN BS -->
-                                <div class="dropdown">
-                                    <button class="btn dropdown-toggle d-flex justify-content-between align-items-center" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                        Posso usare questa dashobard da mobile?
-                                    </button>
-                                    <ul id="down" class="dropdown-menu">
-                                        <li>
-                                            <a class="dropdown-item" href="#">
-                                                Certo che si!
-                                            </a>
-                                        </li>
-                                    </ul>
+                                <!-- Component accordion BS -->
+                                <div class="accordion" id="accordionExample">
+                                    <div class="accordion-item">
+                                      <h2 class="accordion-header">
+                                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                            Come aggiungere un nuovo studente?
+                                        </button>
+                                      </h2>
+                                      <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+                                        <div class="accordion-body">
+                                            Clicca sul + in alto nella sezione blu.
+                                        </div>
+                                      </div>
+                                    </div>
+                                    <div class="accordion-item">
+                                      <h2 class="accordion-header">
+                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                            Come posso accedere alle informazioni del mio account?
+                                        </button>
+                                      </h2>
+                                      <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                                        <div class="accordion-body">
+                                            Clicca sull'icona della campanella.
+                                        </div>
+                                      </div>
+                                    </div>
+                                    <div class="accordion-item">
+                                      <h2 class="accordion-header">
+                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                            Posso usare questa dashobard da mobile?
+                                        </button>
+                                      </h2>
+                                      <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                                        <div class="accordion-body">
+                                            Certo che sì
+                                        </div>
+                                      </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -510,7 +516,7 @@
                                         </div>
     
                                         <div class="element border-0">
-                                            <a href="#">
+                                            <a href="#" class="underline">
                                                 Visualizza report approfondito
                                             </a>
                                         </div>
