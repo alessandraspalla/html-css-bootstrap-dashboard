@@ -23,7 +23,7 @@ header {
     display: none;
 }
 
-form {
+header form {
     flex-grow: 1;
     background-color: #e5e5e5;
     margin-inline: 10px;
@@ -136,7 +136,7 @@ h3 {
     vertical-align: bottom;
 }
 
-#bread_crumb .btn {
+.ms_btn .btn {
     padding: 2px 4px;
     border-radius: 20px;
     background-color: rgba(0, 0, 0, .25);
@@ -149,23 +149,6 @@ h3 {
 
 .d-large {
     display: none;
-}
-
-/* regole offcanvas */
-#canvas.btn {
-    font-size: 1.2rem;
-    height: 35px;
-    width: 35px;
-    border-radius: 10px;
-    background-color: rgba(0, 0, 0, 0);
-}
-
-#canvas.btn:hover {
-    color: #fff;
-}
-
-.offcanvas.offcanvas-end  {
-    width: 50%;
 }
 
 /* versione tablet */
@@ -183,6 +166,30 @@ h3 {
 @media screen and (max-width:576px) {
     #change-order {
         order: -1;
+    }
+}
+
+/* regole offcanvas */
+.btn-outline-light {
+    font-size: 1.2rem;
+    height: 35px;
+    width: 35px;
+    border-radius: 10px;
+    background-color: rgba(0, 0, 0, 0);
+}
+
+#canvas.btn:hover {
+    color: #fff;
+}
+
+.offcanvas.offcanvas-end  {
+    width: 50%;
+}
+
+/* versione tablet */
+@media screen and (max-width:768px) {
+    .offcanvas.offcanvas-end  {
+    width: 100%;
     }
 }
 
