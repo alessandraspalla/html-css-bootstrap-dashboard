@@ -132,7 +132,9 @@ main {
 .item {
     border: 1px solid #999;
     border-radius: 5px;
-    min-height: 200px;
+}
+
+.item.margin{
     margin: 15px 0;
 }
 
@@ -198,6 +200,12 @@ td,th {
     border-bottom: 1px solid #999;
     border-radius: 0;
     margin: 10px;
+}
+
+/* regole sezione to do */
+.element {
+    padding: 10px;
+    border-bottom: 1px solid #999;
 }
 
 /* DEBUG */
